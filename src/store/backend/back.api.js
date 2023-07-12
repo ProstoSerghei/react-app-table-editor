@@ -5,7 +5,7 @@ import Cookies from 'universal-cookie';
 export const backendApi = createApi({
     reducerPath: 'backend',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://127.0.0.1:8000/',
+        baseUrl: 'https://drf-table-editor.onrender.com',
         prepareHeaders: (headers) => {
             const cookie = new Cookies()
             const token = cookie.get('token')
